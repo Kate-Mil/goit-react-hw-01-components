@@ -2,7 +2,7 @@ import user from '../json/user.json';
 import data from '../json/data.json';
 import friends from '../json/friends.json';
 import transactions from '../json/transactions.json';
-import Profile from '../components/Profile/Profile';
+import Profile from './Profile/Profile';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
 import TransactionHistory from './TransactionHistory';
