@@ -7,7 +7,7 @@ import Statistics from './Statistics';
 
 export const App = () => {
   return (
-    <div>
+    <>
       <Profile
         username={user.username}
         tag={user.tag}
@@ -17,6 +17,6 @@ export const App = () => {
       />
 
       <Statistics title="Upload stats" stats={data} />
-    </div>
+    </>
   );
 };
