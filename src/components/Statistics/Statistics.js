@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import StatisticsItem from './StatisticsItem';
 import StatisticsTitle from './StatisticsTitle';
+import css from './Statistics.module.css';
 
 export default function Statistics({ stats, title }) {
   return (
-    <section class="statistics">
+    <section className={css.statistics}>
       {title && <StatisticsTitle title={title} />}
-      <ul class="stat-list">
+      <ul className={css.stat__list}>
         {stats.map(({ id, label, percentage }) => (
           <StatisticsItem key={id} label={label} percentage={percentage} />
         ))}
@@ -23,4 +24,5 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
+  title: PropTypes.string,
 };

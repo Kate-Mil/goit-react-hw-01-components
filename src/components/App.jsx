@@ -3,13 +3,20 @@ import data from '../json/data.json';
 import friends from '../json/friends.json';
 import transactions from '../json/transactions.json';
 import Profile from './Profile/Profile';
-import Statistics from './Statistics';
+import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import { findByLabelText } from '@testing-library/react';
 
 export const App = () => {
   return (
-    <>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 32,
+      }}
+    >
       <Profile
         username={user.username}
         tag={user.tag}
@@ -23,6 +30,6 @@ export const App = () => {
       <FriendList friends={friends} />
 
       <TransactionHistory items={transactions} />
-    </>
+    </div>
   );
 };

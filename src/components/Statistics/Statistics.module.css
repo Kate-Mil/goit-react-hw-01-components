@@ -1,0 +1,39 @@
+.statistics {
+  outline: 1px solid rgba(128, 128, 128, 0.573);
+  width: 375px;
+  padding-top: 24px;
+}
+
+.title {
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.stat__list {
+  display: flex;
+}
+
+.item {
+  display: block;
+  width: 63px;
+  padding: 12px 6px;
+  background-color: pink;
+}
+
+.label {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.percentage {
+  color: white;
+  align-items: center;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+}
