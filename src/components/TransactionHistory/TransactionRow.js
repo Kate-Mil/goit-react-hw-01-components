@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-export default function TransactionRow({ id, type, amount, currency }) {
+export default function TransactionRow({ type, amount, currency }) {
   return (
-    <tr key={id}>
+    <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

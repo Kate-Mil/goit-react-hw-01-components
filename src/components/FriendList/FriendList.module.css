@@ -22,9 +22,11 @@
 }
 
 .isOnline {
+  composes: status;
   background-color: green;
 }
 .isOffline {
+  composes: status;
   background-color: red;
 }
 
